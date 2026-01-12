@@ -9,3 +9,8 @@ def health():
 @app.get("/hello/{name}")
 def hello(name: str):
     return {"message": f"Ciao {name}!"}
+
+
+@app.get("/test")
+def test():
+    return {"test": "ok", "version": "1.0.1", "message": "Endpoint aggiunto da locale!"}
